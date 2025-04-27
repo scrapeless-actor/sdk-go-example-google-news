@@ -46,8 +46,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/redis/go-redis/v9 v9.7.3 h1:YpPyAayJV+XErNsatSElgRZZVCwXX9QzkKYNvO7x0wM=
 github.com/redis/go-redis/v9 v9.7.3/go.mod h1:bGUrSggJ9X9GUmZpZNEOQKaANxSGgOEBRltRTZHSvrA=
-github.com/scrapeless-ai/scrapeless-actor-sdk-go v0.0.2 h1:0GV0fAu4esmgF4ShNyE7GuudsceaOljvGIUmjT0LUUU=
-github.com/scrapeless-ai/scrapeless-actor-sdk-go v0.0.2/go.mod h1:bJjM9VJV06+GBtFlQc6aQlvyCCy08raqp3XULKGoQkc=
+github.com/scrapeless-ai/scrapeless-actor-sdk-go v0.0.3 h1:mHaYYWAD5u2YdcUJVX+bJFf1Jlm7DzZj9lIReRFFM+I=
+github.com/scrapeless-ai/scrapeless-actor-sdk-go v0.0.3/go.mod h1:bJjM9VJV06+GBtFlQc6aQlvyCCy08raqp3XULKGoQkc=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
 github.com/sirupsen/logrus v1.9.3/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=

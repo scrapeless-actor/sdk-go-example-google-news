@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "google-news-actor",
+  "version": "0.0.1",
+  "avatarUrl": "https://avatars.githubusercontent.com/u/206795382?s=48&v=4",
+  "defaultRunOptions": {
+    "timeout": 3600,
+    "memory": 1024
+  }
+}

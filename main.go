@@ -40,10 +40,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	param.Q = "nba"
-	param.Hl = "en-US"
-	param.Gl = "US"
-
 	doCrawl(actor, param, proxy)
 }
 

@@ -1,0 +1,29 @@
+{
+  "title": "google news",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "q": {
+      "title": "Q",
+      "type": "string",
+      "description": "search param.",
+      "editor": "textfield",
+      "prefill": "nba"
+    },
+    "gl": {
+      "title": "GL",
+      "type": "string",
+      "description": "search param.",
+      "editor": "textfield",
+      "prefill": "en-US"
+    },
+    "hl": {
+      "title": "HL",
+      "type": "string",
+      "description": "search param.",
+      "editor": "textfield",
+      "prefill": "US"
+    }
+  },
+  "required": ["q"]
+}
