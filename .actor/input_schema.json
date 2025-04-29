@@ -1,29 +1,62 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scrapeless.com/captcha/turnstile.schema.json",
   "title": "google news",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
     "q": {
-      "title": "Q",
+      "title": "Search Query",
+      "description": "Parameter defines the query you want to search. You can use anything that you would use in a regular Google News search.",
       "type": "string",
-      "description": "search param.",
-      "editor": "textfield",
-      "prefill": "nba"
+      "default": "NBA"
     },
     "gl": {
-      "title": "GL",
+      "title": "Country",
+      "description": "Parameter defines the country to use for the Google search. It's a two-letter country code. (e.g., `us` for the United States, `uk` for United Kingdom, or `fr` for France).",
       "type": "string",
-      "description": "search param.",
-      "editor": "textfield",
-      "prefill": "en-US"
+      "default": "us"
     },
     "hl": {
-      "title": "HL",
+      "title": "Language",
+      "description": "Parameter defines the language to use for the Google search. It's a two-letter language code. (e.g., `en` for English, `es` for Spanish, or `fr` for French).",
       "type": "string",
-      "description": "search param.",
-      "editor": "textfield",
-      "prefill": "US"
+      "default": "en-sg"
+    },
+    "topic_token": {
+      "title": "Topic Token",
+      "description": "Parameter defines the Google News topic token. It is used for accessing the news results for a specific topic (e.g., \"World\", \"Business\", \"Technology\"). The token can be found in our JSON response or the URL of the Google News page (in the URL, it is a string of characters preceded by `/topics/`). Parameter can't be used together with q, story_token, and publication_token parameters.",
+      "type": "string",
+      "default": ""
+    },
+    "section_token": {
+      "title": "Section Token",
+      "description": "Parameter defines the Google News section token. It is used for accessing the sub-section of a specific topic. (e.g., \"Business -> Economy\"). The token can be found in our JSON response or the URL of the Google News page (in the URL, it is a string of characters preceded by `/sections/`) Parameter can only be used in combination with topic_token or publication_token parameters.",
+      "type": "string",
+      "default": ""
+    },
+    "story_token": {
+      "title": "Story Token",
+      "description": "Parameter defines the Google News story token. It is used for accessing the news results with full coverage of a specific story. The token can be found in our JSON response or the URL of the Google News page (in the URL, it is a string of characters preceded by `/stories/`) Parameter can't be used together with q, topic_token, and publication_token parameters.",
+      "type": "string",
+      "default": ""
+    },
+    "publication_token": {
+      "title": "Publication Token",
+      "description": "Parameter defines the Google News publication token. It is used for accessing the news results from a specific publisher (e.g., \"CNN\", \"BBC\", \"The Guardian\"). The token can be found in our JSON response or the URL of the Google News page (in the URL, it is a string of characters preceded by `/publications/`). Parameter can't be used together with q, story_token, and topic_token parameters.",
+      "type": "string",
+      "default": ""
+    },
+    "so": {
+      "title": "Sort By",
+      "description": "Parameter defines the sorting method. Results can be sorted by relevance or by date. By default, the results are sorted by relevance. List of supported values are: `0` Relevance `1` Date Parameter can only be used in combination with story_token parameter",
+      "type": "string",
+      "default": "",
+      "enum": [
+        { "label": "Relevance", "value": "0" },
+        { "label": "Date", "value": "1" }
+      ]
     }
   },
-  "required": ["q"]
+  "required": ["gl", "hl"]
 }
